@@ -144,7 +144,7 @@
     </script>
     <br>
 
-    <button onmousedown="accelerate(-0.2)" onmouseup="accelerate(0.05)">점프</button>
+    <button onpointerdown="accelerate(-0.2)" onpointerup="accelerate(0.05)">점프</button>
 
     <button onclick="Telegram.WebApp.openLink('https://constacts.com/');">constacts</button>
     <button onclick="Telegram.WebApp.expand();">큰화면으로보기</button>
@@ -162,10 +162,10 @@
 
         // Show main button
         Telegram.WebApp.MainButton.setParams({
-            text: 'Main Button'
+            text: 'Main👀'
         });
         Telegram.WebApp.MainButton.onClick(function () {
-            Telegram.WebApp.showAlert('Main Button was clicked')
+            Telegram.WebApp.showAlert('메인 버튼이 눌렸다👀')
         });
         Telegram.WebApp.MainButton.show();
 
